@@ -90,7 +90,11 @@
       <version>4.3.7.RELEASE</version>
     </dependency>
 	
-
+<dependency>
+    <groupId>org.wildfly</groupId>
+    <artifactId>wildfly-dist</artifactId>
+    <version>10.1.0.Final</version>
+</dependency>
     <!-- Databases - Uses HSQL by default -->
     <dependency>
       <groupId>org.hsqldb</groupId>
@@ -211,7 +215,21 @@
           <failOnNoGitDirectory>false</failOnNoGitDirectory>
         </configuration>
       </plugin>
-
+<plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>1.0.2.Final</version>
+<!--
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+-->
+            </plugin>
       <plugin>
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
