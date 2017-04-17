@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import org.springframework.boot.web.support.SpringBootServletInitializer;
+
 /**
  * PetClinic Spring Boot Application.
  * 
@@ -30,7 +32,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class PetClinicApplication {
+public class PetClinicApplication extends SpringBootServletInitializer  {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(PetClinicApplication.class, args);
