@@ -32,7 +32,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  *
  */
 @SpringBootApplication
-public class PetClinicApplication extends SpringBootServletInitializer  {
+public class PetClinicApplication   {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(PetClinicApplication.class, args);
