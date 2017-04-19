@@ -34,6 +34,9 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  *
  */
 @SpringBootApplication
+@Configuration
+@ComponentScan
+@EnableAutoConfiguration
 public class PetClinicApplication extends SpringBootServletInitializer   {
 	
 	@Override
