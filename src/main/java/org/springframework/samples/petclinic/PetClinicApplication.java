@@ -25,7 +25,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.boot.web.support.SpringApplicationBuilder;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
  * PetClinic Spring Boot Application.
