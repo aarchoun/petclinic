@@ -8,7 +8,7 @@ ENV Path  C:\\mysql-5.5.55-winx64\\bin
 
 EXPOSE 3306
 
-COPY ../src/main/resources/db/mysql/schema.sql C:/mysql-5.5.55-winx64/bin
+COPY schema.sql C:/mysql-5.5.55-winx64/bin
 
 COPY privileges.sql C:/mysql-5.5.55-winx64/bin
 
