@@ -1,1 +1,1 @@
-mysql -u root -e "source C:/mysql-5.5.55-winx64/bin/schema.sql"
+docker exec -it  petclinic cmd.exe /C mysql -u root -e "source C:/mysql-5.5.55-winx64/bin/schema.sql"
