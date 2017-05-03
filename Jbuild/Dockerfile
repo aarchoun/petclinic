@@ -16,7 +16,7 @@ COPY findstr.exe C:\\apache-jmeter-3.2\\bin
 COPY petclinic_test_plan.jmx C:
 
 
-CMD cd C:\Windows\System32 && C:\apache-jmeter-3.2\bin\jmeter.bat -n -t C:\petclinic_test_plan.jmx  -l  C:\results.jtl && timeout 30
+CMD cd C:\Windows\System32 && C:\apache-jmeter-3.2\bin\jmeter.bat -n -t C:\petclinic_test_plan.jmx  -l  C:\results.jtl && waitfor SomethingThatIsNeverHappening /t 30
 
 
 
